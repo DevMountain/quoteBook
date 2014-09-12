@@ -1,0 +1,53 @@
+.main-container h1 {
+  text-align: center;
+}
+
+.blog-container {
+  width: 50%;
+  margin: 0px auto;
+}
+
+.add-quote, .remove-quote, .filter-quote {
+  background: rgba(0, 0, 0, 0.77);
+  color: white;
+  border: 0;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.add-quote-container, .remove-quote-container, .filter-quotes-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.button-container {
+  width: 303px;
+  margin: 0px auto;
+}
+
+.quote {
+  margin: 20px;
+}
+
+.author {
+  text-align: right;
+}
