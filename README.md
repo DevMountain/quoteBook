@@ -27,7 +27,7 @@ app.controller('mainCtrl', function(){
 });
 ```
 Once again note we're 'getting' the quoteBook module rather than 'setting' ([]) it. Also, it's really important to remember that whenever you add a js file, you need to include those in your index.html file as scripts. 
-* In your index.html file before the </body> tag closes include <script> </script> tags which link to all your Angular files in the 'js' folder.
+* In your index.html file before the "</body>" tag closes include "<script> </script>" tags which link to all your Angular files in the 'js' folder.
 * Now that your app and controller are set up and they're linked in your html page, add a test property to your scope object in your controller then verify that it works {{test}} in your html page. 
 * If you see whatever text you entered into $scope.test in your view, continue to the next step. If not, check your console for any errors. 
 
