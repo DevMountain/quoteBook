@@ -33,7 +33,7 @@ Once again note we're 'getting' the quoteBook module rather than 'setting' ([]) 
 
 
 ###Step 2: Set up your Angular Service
-The whole point of this repo is to get used to having your main data originating from a service and not a controller. Head over to your dataService.js file, 'get' the quoteBook module, then add a property of service (or factory) to the app. It's important to remember the differences between a 'factory' and 'service' in Angular because they don't behave the same. If you use app.factory() make sure you create an object, add properties to it, then return that object. If you use app.service(), you add properties to the 'this' keyword. More details here http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
+The whole point of this repo is to get used to having your main data originating from a service and not a controller. Head over to your dataService.js file, 'get' the quoteBook module, then add a property of service (or factory) to the app. It's important to remember the differences between a 'factory' and 'service' in Angular because they don't behave the same. If you use app.factory() make sure you create an object, add properties to it, then return that object. If you use app.service(), you add properties to the 'this' keyword. More details here<a target="none" href="http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/"> http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/</a>
 * After you've created a new service or factory and made sure you included the file in your index.html file, add the following data in your service.
 ```javascript
   var quotes = [
