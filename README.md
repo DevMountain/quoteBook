@@ -22,7 +22,7 @@ var app = angular.module('quoteBook', []);
 ```javascript
 var app = angular.module('quoteBook');
 
-app.controller('mainCtrl', function(){
+app.controller('mainCtrl', function($scope){
   
 });
 ```
