@@ -5,7 +5,6 @@ quoteBook
 Demonstrate the ability to outsource data to an Angular service and then consume and filter through that data.
 Live Version Here http://tylermcginnis.com/quoteBook/
 
-##Day 1
 
 ###Step 1: Set up your Structure
 The first step whenever you're setting up an Angular App is to set up your foundation then check if your controller is tied to the view as it should be. 
