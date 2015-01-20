@@ -2,8 +2,11 @@ quoteBook
 =========
 
 ##Objectives
-Demonstrate the ability to outsource data to an Angular service and then consume and filter through that data.
-Live Version Here http://tylermcginnis.com/quoteBook/
+  - understand the purpose of Services in Angular
+  - know how to inject services into their controllers
+  - know how to call methods on their services from in their controllers and put the response on $scope
+  - know the difference between factories and services 
+
 
 
 ###Step 1: Set up your Structure
