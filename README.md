@@ -1,7 +1,7 @@
 quoteBook
 =========
 
-##Objectives
+### Learning Objectives
   - understand the purpose of Services in Angular
   - know how to inject services into their controllers
   - know how to call methods on their services from in their controllers and put the response on $scope
