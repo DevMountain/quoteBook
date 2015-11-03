@@ -70,6 +70,8 @@ Now that your service is set up, let's inject your service in to your controller
 * Once you've finished, add some ng-shows to 'toggle' the input boxes for add, remove, and filter making sure you only show one at a time.
 
 ##Black Diamond: Persist your Quotes using your browser's local storage
-* Store the quotes object in your browser's local storage. You can do this with one of a few ways. You could use `localStorage`, which you can learn more about at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Recognize that values will need to be stored as a string, so you may have to convert your data to and from a string with [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) and [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse).
+* Store the quotes object in your browser's local storage.
+
+You can do this with one of a few ways. You could use `localStorage`, which you can learn more about at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Recognize that values will need to be stored as a string, so you may have to convert your data to and from a string with [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) and [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse).
 
 Or, you could use Angular's [$cookie service](https://docs.angularjs.org/api/ngCookies/service/$cookies) to store your quotes object. Be mindful to use the documentation version that correlates with the correct Angular version you are using. Angular's $cookie has had some changes between different Angular versions.
