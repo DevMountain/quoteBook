@@ -5,12 +5,12 @@ quoteBook
   - understand the purpose of Services in Angular
   - know how to inject services into their controllers
   - know how to call methods on their services from in their controllers and put the response on $scope
-  - know the difference between factories and services 
+  - know the difference between factories and services
 
 
 
 ###Step 1: Set up your Structure
-The first step whenever you're setting up an Angular App is to set up your foundation then check if your controller is tied to the view as it should be. 
+The first step whenever you're setting up an Angular App is to set up your foundation then check if your controller is tied to the view as it should be.
 * Create an index.html and a style.css file
 * Create a folder called js
 * In the js folder, create an app.js, dataService.js, and a mainCtrl.js file
@@ -25,13 +25,13 @@ var app = angular.module('quoteBook', []);
 var app = angular.module('quoteBook');
 
 app.controller('mainCtrl', function($scope){
-  
+
 });
 ```
-Once again note we're 'getting' the quoteBook module rather than 'setting' ([]) it. Also, it's really important to remember that whenever you add a js file, you need to include those in your index.html file as scripts. 
+Once again note we're 'getting' the quoteBook module rather than 'setting' ([]) it. Also, it's really important to remember that whenever you add a js file, you need to include those in your index.html file as scripts.
 * In your index.html file before the body tag closes include script tags which link to all your Angular files in the 'js' folder.
-* Now that your app and controller are set up and they're linked in your html page, add a test property to your scope object in your controller then verify that it works {{test}} in your html page. 
-* If you see whatever text you entered into $scope.test in your view, continue to the next step. If not, check your console for any errors. 
+* Now that your app and controller are set up and they're linked in your html page, add a test property to your scope object in your controller then verify that it works {{test}} in your html page.
+* If you see whatever text you entered into $scope.test in your view, continue to the next step. If not, check your console for any errors.
 
 
 ###Step 2: Set up your Angular Service
@@ -54,7 +54,7 @@ Notice we didn't put our quotes array directly on 'this' or your object you're g
 * Create three methods on your 'this' (service) or custom object (factory), one called getData, one called addData, and one called removeData
 * getData simply returns the quotes array
 * addData takes in a data object, verifies that data object has the proper keys (just text and author), then adds that object to the end of the quotes array
-* removeData takes in the text of a quote, loops through the quotes array, then removes the proper quote from the array. 
+* removeData takes in the text of a quote, loops through the quotes array, then removes the proper quote from the array.
 
 Once you finish those methods, this service should be complete. Now notice how all the heavy logic is contained in this one service which we can inject into any controller we create. This makes things very modular and testable.
 
@@ -69,7 +69,9 @@ Now that your service is set up, let's inject your service in to your controller
 * Using ng-click and the methods we set up on our dataService object earlier, make those three buttons do the appropriate action.
 * Once you've finished, add some ng-shows to 'toggle' the input boxes for add, remove, and filter making sure you only show one at a time.
 
-##Step 5: Persist your Quotes using your browser's local storage
-* Use JSON.stringify and JSON.parse to store the quotes object in your browser's local storage.
+##Black Diamond: Persist your Quotes using your browser's local storage
+* Store the quotes object in your browser's local storage.
 
+You can do this with one of a few ways. You could use [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage), which you can learn more about at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Recognize that values will need to be stored as a string, so you may need to convert your data to and from a string with [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) and [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse).
 
+Or, you could use Angular's [$cookie service](https://docs.angularjs.org/api/ngCookies/service/$cookies) to store your quotes object. Be mindful to use the documentation version that correlates with the correct Angular version you are using. Angular's $cookie has had some changes between different Angular versions.
