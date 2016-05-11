@@ -16,15 +16,13 @@ The first step whenever you're setting up an Angular App is to set up your found
 * In your app.js file set up 'home' for your angular app like below. Take note how you're going to include the [] as the second parameter. This tells Angular that you want to create a new module rather than just use an existing one. In all other files, we won't be using the [] because we want to use the module which has already been set.
 
 ```javascript
-var app = angular.module('quoteBook', []);
+angular.module('quoteBook', []);
 ```
 
 * Now in your mainCtrl.js file set up your first controller (mainCtrl). The code will look like this
 
 ```javascript
-var app = angular.module('quoteBook');
-
-app.controller('mainCtrl', function($scope){
+angular.module('quoteBook').controller('mainCtrl', function($scope){
 
 });
 ```
@@ -35,7 +33,7 @@ Once again, note we're 'getting' the quoteBook module rather than 'setting' ([])
 * If you see whatever text you entered into $scope.test in your view, continue to the next step. If not, check your console for any errors.
 
 ###Step 2: Set up your Angular Service
-The whole point of this repo is to get used to having your main data originating from a service and not a controller. Head over to your dataService.js file, 'get' the quoteBook module, then add a property of service (or factory) to the app. It's important to remember the differences between a 'factory' and 'service' in Angular because they aren't written the same way. If you use app.factory() make sure you create an object, add properties to it, then return that object. If you use app.service(), you add properties to the 'this' keyword. More details here http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
+The whole point of this repo is to get used to having your main data originating from a service and not a controller. Head over to your dataService.js file, 'get' the quoteBook module, then add a property of service (or factory) to the app. It's important to remember the differences between a 'factory' and 'service' in Angular because they aren't written the same way. If you use angular.module('quoteBook').factory() make sure you create an object, add properties to it, then return that object. If you use angular.module('quoteBook').service(), you add properties to the 'this' keyword. More details here http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
 * After you've created a new service or factory and made sure you included the file in your index.html file, add the following data in your service.
 
 ```javascript
