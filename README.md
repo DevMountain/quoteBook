@@ -6,6 +6,8 @@ quoteBook
 ##Objective
 Use Angular and services to create an application that manages famous quotes
 
+![alt text](https://github.com/DevMountain/quoteBook/blob/master/preview.png?raw=true, "Preview Image")
+
 ###Step 1: Set up your Structure
 The first step whenever you're setting up an Angular App is to set up your foundation then check if your controller is tied to the view as it should be.
 * Create an index.html and a style.css file
