@@ -3,12 +3,13 @@
 quoteBook
 =========
 
-##Objectives 
-### 
+## Objectives 
+### Overview
 #### 
 * Use Angular and services to create an application that manages famous quotes.
 * Better understand services and how they can be used to separate and manage data for your controller
 
+##### What you're building will look something like this
 ![alt text](https://github.com/DevMountain/quoteBook/blob/master/preview.png?raw=true, "Preview Image")
 
 ## Instructions
