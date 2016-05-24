@@ -133,7 +133,7 @@ Inject your service in to your controller then add that data to the scope of you
 #### 
 __Code__
 ```javascript
-app.controller("mainCtrl",function($scope, dataService){
+angular.module("quoteBook").controller("mainCtrl",function($scope, dataService){
 
 $scope.quotes = dataService.getQuotes();
 })
