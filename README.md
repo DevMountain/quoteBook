@@ -140,11 +140,10 @@ $scope.quotes = dataService.getQuotes();
 ```
 
 ```html
- <p ng-repeat = "quote in quotes track by $index" class = 'quote animate-repeat' >
-
-    <i>&#8220</i>
-    <span class = 'text'>{{quote.text}}</span> <i>&#8221</i> <span class = 'author'> -- {{quote.author}}</span> <i class="fa fa-times-circle" ng-click = "deleteMe(quote.text)"></i> 
-    
+  <p ng-repeat = "quote in quotes track by $index">
+    <span class = 'text'>{{quote.text}}</span>
+    <span class = 'author'> -- {{quote.author}}</span> 
+    <button ng-click = "deleteMe(quote.text)">Delete</button> 
   </p>
 ```
 
@@ -162,7 +161,7 @@ __code__
 ```html
  <input type="text" placeholder="Add new quote!" ng-model='newQuoteText'>
   <input type="text" placeholder="Quotes author!" ng-model='newQuoteAuthor'>
-  <button ng-click="addQuote()"> Add Quote</button>
+  <button ng-click="addQuote()">Add Quote</button>
   <div>
     Filter: <input type="text" ng-model='filterText'/>
   </div>
@@ -178,7 +177,6 @@ $scope.deleteMe = function(textToDelete){
 }
 
 $scope.addQuote = function(){
-  console.log("Here");
   var newQuote = {
     text:$scope.newQuoteText,
     author:$scope.newQuoteAuthor
