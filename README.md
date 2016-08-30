@@ -152,9 +152,9 @@ $scope.quotes = dataService.getQuotes();
 Finish the project by allowing the user to add, remove, and filter quotes
 
 #### 
-* Create three buttons, Add Quote, Remove Quote, and Filter Quotes
-* Using ng-click and the methods we set up on our dataService object earlier, make those three buttons do the appropriate action.
-* Once you've finished, add some ng-shows to 'toggle' the input boxes for add, remove, and filter making sure you only show one at a time.
+* Create three text input fields. One for adding new quote text, another for adding a new quote author, and a third to filter the quotes list.
+* Make a button to handle creating a new quote, using ng-click and the methods we set up on our dataService object earlier
+* Then create a button on each quote that allows you to delete individual quotes using ng-click and the dataService methods.
 
 #### 
 __code__
