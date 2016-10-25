@@ -28,7 +28,7 @@ The first step whenever you're setting up an Angular App is to set up your found
 * In your index.html file create the basic structure of your html
   - Bootstrap your app with ```ng-app="quoteBook"```.
   - Bind your controller to your body tag with ```ng-controller="mainCtrl"```.
-* In your app.js file create your angular app. Call it 'quotebook';
+* In your app.js file create your angular app. Call it 'quoteBook';
 * In your mainCtrl.js file set up your first controller. Call it 'mainCtrl'.
 
 ####
@@ -75,9 +75,9 @@ Sample data:
 
 
 * Now that we have our data, let's set up ways to access that data.
-* Create three methods on 'this' service.
-  - getData - Returns the quotes array.
-  - addData - Takes a data object as an argument, verifies the data object has all the right values (text and author), pushes that object to the quotes array.
+* Create three methods on your service, using the 'this' keyword.
+  - getQuotes - Returns the quotes array.
+  - addData - Takes a data object as an argument, verifies the data object has all the right properties (text and author), and that they have defined values, pushes that object to the quotes array.
   - removeData - Takes in the text of a quote, loops through the quotes array, and removes the proper quote from the array.
 
 *Note: By using the above methods, we can control access to the quotes array. The only way to modify the quotes array outside of our service is to use one of these methods.*
