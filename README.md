@@ -88,7 +88,7 @@ Once you finish those methods, this service should be complete. Now notice how a
 __Code__
 
 ```javascript
-angular.module("quoteBook").factory('dataService', function(){
+angular.module("quoteBook").service('dataService', function(){
 
   var quotes = [
       { text: 'Life isn\'t about getting and having, it\'s about giving and being.', author: 'Kevin Kruse'},
