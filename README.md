@@ -1,4 +1,4 @@
-<img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
+<img src="https://s3.amazonaws.com/devmountain/readme-logo.png" width="250" align="right">
 
 quoteBook
 =========
@@ -203,13 +203,13 @@ You can do this with one of a few ways. You could use [`localStorage`](https://d
 Or, you could use Angular's [$cookie service](https://docs.angularjs.org/api/ngCookies/service/$cookies) to store your quotes object. Be mindful to use the documentation version that correlates with the correct Angular version you are using. Angular's $cookie has had some changes between different Angular versions.
 
 ## Contributions
-###
-####
+
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
 
 ## Copyright
-###
-####
-© DevMountain LLC, 2015. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
-<img src="https://devmounta.in/img/logowhiteblue.png" width="250">
+© DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
+
+<p align="center">
+<img src="https://s3.amazonaws.com/devmountain/readme-logo.png" width="250">
+</p>
